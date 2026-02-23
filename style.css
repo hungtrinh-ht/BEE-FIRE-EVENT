@@ -151,6 +151,44 @@ body {
   border-radius: 12px;
 }
 
+/* TEAM */
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.member {
+  background: #111;
+  border-radius: 15px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.member:hover {
+  transform: translateY(-8px);
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ffae00;
+}
+
+.member h3 {
+  color: #ffae00;
+  margin-bottom: 8px;
+}
+
+.member p {
+  font-size: 14px;
+  color: #ccc;
+}
+
 /* CONTACT */
 form {
   max-width: 500px;
@@ -213,4 +251,22 @@ footer {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* FACEBOOK EVENT */
+.fb-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(45deg, #1877f2, #42a5f5);
+  transition: 0.3s;
+}
+
+.fb-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
 }
